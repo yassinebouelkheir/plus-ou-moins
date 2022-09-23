@@ -80,6 +80,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showNumber(life_Count)
     }
 })
+input.onGesture(Gesture.Shake, function () {
+    control.reset()
+})
 let life_Count = 0
 let game_Started = 0
 let show_Gameover = 0
