@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
         Q += 1
         show_Change(true)
         basic.clearScreen()
-        basic.showNumber(life_Count)
+        basic.showNumber(Q)
     }
 })
 input.onButtonPressed(Button.AB, function () {
@@ -19,7 +19,7 @@ input.onButtonPressed(Button.AB, function () {
         }
         show_Change(false)
         basic.clearScreen()
-        basic.showNumber(life_Count)
+        basic.showNumber(Q)
     }
 })
 function show_Change (change_State: boolean) {
@@ -77,7 +77,7 @@ input.onButtonPressed(Button.B, function () {
             }
         }
         basic.clearScreen()
-        basic.showNumber(life_Count)
+        basic.showNumber(Q)
     }
 })
 input.onGesture(Gesture.Shake, function () {
